@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/World.gd" type="Script" id=2]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Particles1" type="Particles2D" parent="."]
+position = Vector2( 128, 256 )
+
+[node name="Particles2" type="Particles2D" parent="."]
+position = Vector2( 512, 256 )
+
+[node name="Particles3" type="Particles2D" parent="."]
+position = Vector2( 896, 256 )
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2( 512, 304 )
+script = ExtResource( 1 )
